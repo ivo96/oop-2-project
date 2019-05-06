@@ -1,4 +1,6 @@
 import com.util.ConnectionConfiguration;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.sql.*;
 
@@ -94,6 +96,40 @@ public class EmployeeDAO {
                     e.printStackTrace();
                 }
             }
+        }
+    }
+
+    public static ObservableList<EmployeeModel> getAllRecords() throws ClassNotFoundException, SQLException {
+        Connection connection = null;
+        ObservableList<EmployeeModel> arrList = FXCollections.observableArrayList();
+        Statement statement = null;
+        try {
+            connection = ConnectionConfiguration.getConnection();
+            if (connection != null) {
+                System.out.println("Connection established");
+                statement = connection.createStatement();
+                String sql = "SELECT id, name, salary, city FROM employee";
+                ResultSet res = statement.executeQuery(sql);
+                while (res.next()) {
+                    EmployeeModel emp = new EmployeeModel();
+                    emp.setId(res.getInt("id"));
+                    emp.setName(res.getString("name"));
+                    emp.setSalary(res.getDouble("salary"));
+                    emp.setCity(res.getString("city"));
+                    arrList.add(emp);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            return arrList;
         }
     }
 }

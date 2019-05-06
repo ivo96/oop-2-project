@@ -32,17 +32,10 @@ public class Correlation implements ReadWriteDelete {
                 String sql1 = "SELECT name, salary FROM employee WHERE city='Sofia'";
                 ResultSet res1 = statement.executeQuery(sql1);
                 while (res1.next()) {
-                    //Retrieve by column name
                     String tempName = res1.getString("name");
                     double tempSalary = res1.getDouble("salary");
                     MonthlySalary monthlySalary = new MonthlySalary(tempName, tempSalary);
                     city1List.add(monthlySalary);
-                    //Print
-//                    System.out.print("Sofia: \n");
-//                    System.out.print("Name: " + tempName);
-//                    System.out.print(", Salary: " + tempSalary);
-//                    System.out.print(" city:" + city);
-//                    System.out.print("\n");
                 }
             }
         } catch (Exception e) {
