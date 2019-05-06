@@ -7,5 +7,49 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/build/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/demo/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/generated/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/legacy/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/main/core-api/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/main/core-impl/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/main/protocol-impl/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/main/user-api/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/main/user-impl/java" />
+          <root url="jar://$USER_HOME$/Downloads/mysql-connector-java-8.0.16.zip!/mysql-connector-java-8.0.16/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="mysql:mysql-connector-java:8.0.16" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/openjfx-11.0.2_linux-x64_bin-sdk.zip!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
