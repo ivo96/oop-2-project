@@ -26,5 +26,30 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql:mysql-connector-java:8.0.16" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <NATIVE>
+          <root url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" />
+        </NATIVE>
+        <SOURCES>
+          <root url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/openjfx-11.0.2_linux-x64_bin-sdk.zip!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

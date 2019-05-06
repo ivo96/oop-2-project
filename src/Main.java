@@ -1,8 +1,13 @@
-import java.io.Console;
+import javafx.application.Application;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application {
     public static void main(String [] args) {
-        Correlation corr = new Correlation();
-        System.out.print("\nCorrelation " + corr.getCorrelation());
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        stage.show();
     }
 }
