@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.sql.*;
 import static java.lang.Math.sqrt;
 
-public class Correlation {
+public class Correlation implements ReadWriteDelete {
 
     private ArrayList<MonthlySalary> city1List;
     private ArrayList<MonthlySalary> city2List;
@@ -150,5 +150,24 @@ public class Correlation {
     }
 
 
+    @Override
+    public void read() {
+
+    }
+
+    @Override
+    public void write() {
+
+    }
+
+    @Override
+    public void delete() {
+
+    }
+
+    @Override
+    public void update() {
+
+    }
 }
 
